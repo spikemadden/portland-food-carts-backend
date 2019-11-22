@@ -1,0 +1,22 @@
+service: portland-food-carts-backend
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+  region: us-west-2
+  profile: serverless
+  role: arn:aws:iam::853846477701:role/portland-food-carts-prod-role
+  environment:
+    YELP_API_TOKEN: ${ssm:/portland-food-carts/backend/yelp-api-token~true}
+    FOOD_CARTS_URL: ${ssm:/portland-food-carts/backend/food-carts-url~true}
+functions:
+  yelp:
+    handler: yelp.save
+    events:
+      - schedule: rate(1 day)
+  api:
+    handler: api.search
+    events:
+      - http:
+          path: search
+          method: get

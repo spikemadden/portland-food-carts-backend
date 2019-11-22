@@ -1,0 +1,21 @@
+{
+  "name": "portland-food-carts-backend",
+  "description": "backend for the food carts app",
+  "version": "1.0.0",
+  "author": "Spike Madden",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spikemadden/portland-food-carts-backend.git"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.9",
+    "express": "^4.16.4",
+    "node-fetch": "^2.6.0",
+    "serverless-http": "^2.3.0",
+    "yelp-fusion": "^3.0.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.48.0"
+  }
+}
