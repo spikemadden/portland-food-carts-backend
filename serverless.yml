@@ -4,7 +4,6 @@ provider:
   runtime: nodejs12.x
   stage: prod
   region: us-west-2
-  profile: serverless
   role: arn:aws:iam::853846477701:role/portland-food-carts-prod-role
   environment:
     YELP_API_TOKEN: ${ssm:/portland-food-carts/backend/yelp-api-token~true}
