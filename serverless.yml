@@ -1,7 +1,7 @@
 service: portland-food-carts-backend
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs10.x
   stage: prod
   region: us-west-2
   role: arn:aws:iam::853846477701:role/portland-food-carts-prod-role

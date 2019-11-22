@@ -37,6 +37,9 @@ app.get('/search', (req, res) => {
         r.push(cart);
       }
     }
+    res.set({
+      'Access-Control-Allow-Origin': '*',	
+    });
     res.send(JSON.stringify({
       "status": "success",
       "hits": results.length - skipped,
