@@ -30,6 +30,8 @@ module.exports.save = (event, context, callback) => {
         Bucket: 'food-carts',
         Key: 'food-carts.json',
         Body: JSON.stringify(json, null, 2),
+        ContentType: 'application/json',
+        ACL: 'public-read',
       }).promise().then(v => callback(null, v), callback);
   });
 };
