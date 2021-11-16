@@ -9,7 +9,7 @@
     "url": "https://github.com/spikemadden/portland-food-carts-backend.git"
   },
   "dependencies": {
-    "aws-sdk": "^2.7.9",
+    "aws-sdk": "^2.814.0",
     "express": "^4.16.4",
     "node-fetch": "^2.6.0",
     "serverless-http": "^2.3.0",
