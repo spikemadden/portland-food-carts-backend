@@ -11,7 +11,7 @@
   "dependencies": {
     "aws-sdk": "^2.7.9",
     "express": "^4.16.4",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "serverless-http": "^2.3.0",
     "yelp-fusion": "^3.0.0"
   },
